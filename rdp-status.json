@@ -1,6 +1,6 @@
 {
-  "active": false,
-  "hostname": "rdpfree-2",
+  "active": true,
+  "hostname": "rdphnx-3",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Windows 10 look",
@@ -8,13 +8,13 @@
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-12T11:07:13Z",
-  "expires_at": "2026-10-12T17:02:13Z",
+  "started_at": "2026-10-12T11:45:10Z",
+  "expires_at": "2026-10-12T17:40:10Z",
   "duration_menit": 355,
-  "run_id": "38240064784",
+  "run_id": "38243773897",
   "run_attempt": "1",
-  "run_number": "2",
-  "run_url": "https://github.com/Hanz-store2/Rdp-xykal/actions/runs/38240064784",
+  "run_number": "3",
+  "run_url": "https://github.com/Hanz-store2/Rdp-xykal/actions/runs/38243773897",
   "mode": "bersih+win10",
   "win10": {
     "look": "ok",
@@ -42,17 +42,17 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "grafis": {
-    "vulkan": "llvmpipe (LLVM 23.1.2, 256 bits) (PHYSICAL_DEVICE_TYPE_CPU)",
-    "install": "mesa 26.2.4.0 [Mesa/X.org]",
-    "files": "opengl32.dll,libgallium_wgl.dll,vulkan_lvp.dll,vulkan-1.dll",
     "opengl": "4.6 (Core Profile) Mesa 26.2.4 (git-9a0169f2a7) | llvmpipe (LLVM 23.1.2, 256 bits) | Mesa",
-    "dir": "C:\\XyRDP\\grafis",
     "mode": "software",
-    "adapters": "Microsoft Hyper-V Video",
-    "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat.",
+    "vulkan": "llvmpipe (LLVM 23.1.2, 256 bits) (PHYSICAL_DEVICE_TYPE_CPU)",
+    "mesa": "26.2.4",
     "loader": "vulkan-1.dll 1.4.363.0 (LunarG)",
     "debug": "",
-    "mesa": "26.2.4"
+    "dir": "C:\\XyRDP\\grafis",
+    "adapters": "Microsoft Hyper-V Video",
+    "files": "opengl32.dll,libgallium_wgl.dll,vulkan_lvp.dll,vulkan-1.dll",
+    "install": "mesa 26.2.4.0 [Mesa/X.org]",
+    "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat."
   },
   "extras": {
     "lightshot": "skip",
@@ -65,27 +65,26 @@
   },
   "akses": {
     "tailscale": {
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "magicdns": "rdphnx-3.tailbcd7f0.ts.net.",
+      "hostname": "rdphnx-3",
       "status": "ok",
-      "ip": "",
-      "magicdns": "",
-      "hostname": "",
-      "funnel_addr": ""
+      "ip": "100.66.100.114",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL."
     },
     "mode": "tailscale"
   },
   "media": {
-    "wallpaper": "xyverse_configured_for_user_logon",
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
+    "wallpaper": "xyverse_configured_for_user_logon",
     "audio_output": "rdp_playback_enabled",
     "microphone": "rdp_capture_enabled"
   },
   "games": {
-    "samp": {
-      "status": "requires_self_hosted",
-      "note": "Pemasangan game hanya di mesin self-hosted khusus."
-    },
     "minecraft_bedrock": {
+      "status": "disabled",
+      "note": "Tidak dipilih"
+    },
+    "roblox": {
       "status": "disabled",
       "note": "Tidak dipilih"
     },
@@ -93,18 +92,16 @@
       "status": "disabled",
       "note": "Tidak dipilih"
     },
-    "roblox": {
-      "status": "disabled",
-      "note": "Tidak dipilih"
+    "samp": {
+      "status": "requires_self_hosted",
+      "note": "Pemasangan game hanya di mesin self-hosted khusus."
     }
   },
   "game_environment": {
-    "windows_server": true,
     "runner": "github",
-    "play_tested": false,
+    "windows_server": true,
     "hypervisor_present": true,
+    "play_tested": false,
     "os": "Microsoft Windows Server 2022 Datacenter"
-  },
-  "heartbeat_at": "2026-10-12T11:33:18.0730986Z",
-  "stopped_at": "2026-10-12T11:34:42Z"
+  }
 }
