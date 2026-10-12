@@ -1,5 +1,5 @@
 {
-  "active": true,
+  "active": false,
   "hostname": "rdphnx-3",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
@@ -65,11 +65,12 @@
   },
   "akses": {
     "tailscale": {
-      "magicdns": "rdphnx-3.tailbcd7f0.ts.net.",
-      "hostname": "rdphnx-3",
       "status": "ok",
-      "ip": "100.66.100.114",
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL."
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "ip": "",
+      "magicdns": "",
+      "hostname": "",
+      "funnel_addr": ""
     },
     "mode": "tailscale"
   },
@@ -104,5 +105,6 @@
     "play_tested": false,
     "os": "Microsoft Windows Server 2022 Datacenter"
   },
-  "heartbeat_at": "2026-10-12T12:41:57.2298468Z"
+  "heartbeat_at": "2026-10-12T12:41:57.2298468Z",
+  "stopped_at": "2026-10-12T12:42:01Z"
 }
