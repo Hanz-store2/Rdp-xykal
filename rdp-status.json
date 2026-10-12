@@ -103,5 +103,6 @@
     "hypervisor_present": true,
     "runner": "github",
     "play_tested": false
-  }
+  },
+  "heartbeat_at": "2026-10-12T10:36:53.5985413Z"
 }
